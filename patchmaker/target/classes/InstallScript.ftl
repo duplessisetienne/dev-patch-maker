@@ -5,14 +5,9 @@
 --  ${versioncontrol}
 --
 
-Clear Screen
-
-
-define LOGFILE   = 'PATCH${patchnumber}.log';
-define PATCHNO   = ${patchnumber};
-
 
 set define off;
+SPOOL 'PATCH${patchnumber}.log
 
 Prompt ======================================================================================
 Prompt |                     Installing ${patchname}       |

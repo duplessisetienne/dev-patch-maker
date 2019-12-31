@@ -1,0 +1,5 @@
+com/duplessis/etienne/patchmaker/controler/PatchController.class
+com/duplessis/etienne/patchmaker/service/PatchService.class
+com/duplessis/etienne/patchmaker/PatchmakerApplication.class
+com/duplessis/etienne/patchmaker/model/Patch.class
+com/duplessis/etienne/patchmaker/service/FreeMakerConsoleEx.class

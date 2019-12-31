@@ -7,7 +7,7 @@
 
 
 set define off;
-SPOOL 'PATCH${patchnumber}.log
+SPOOL PATCH${patchnumber}.log
 
 Prompt ======================================================================================
 Prompt |                     Installing ${patchname}       |

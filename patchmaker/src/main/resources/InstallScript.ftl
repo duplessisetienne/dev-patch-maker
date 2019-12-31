@@ -44,6 +44,9 @@ Prompt =========================================================================
 @procedure/${procedure}.sql;
 </#list>
 
+Insert Into SVED_DETAIL (SVED_SVE_EFIX_NUMBER, SVED_DESCRIPTION)
+Values (${patchnumber}, 'Procedures ${pacthdescription}');
+Commit;
 ----------------------------------------------------------------------------------
 set termout on;
 Prompt
@@ -56,7 +59,9 @@ Prompt =========================================================================
 <#list functions as function>
 @function/${function}.sql;
 </#list>
-
+Insert Into SVED_DETAIL (SVED_SVE_EFIX_NUMBER, SVED_DESCRIPTION)
+Values (${patchnumber}, 'Functions ${pacthdescription}');
+Commit;
 ----------------------------------------------------------------------------------
 set termout on;
 Prompt
@@ -69,6 +74,9 @@ Prompt =========================================================================
 <#list types as type>
 @type/${type}.sql;
 </#list>
+Insert Into SVED_DETAIL (SVED_SVE_EFIX_NUMBER, SVED_DESCRIPTION)
+Values (${patchnumber}, 'Types ${pacthdescription}');
+Commit;
 ----------------------------------------------------------------------------------
 set termout on;
 Prompt
@@ -81,6 +89,10 @@ Prompt =========================================================================
 <#list apexpages as apex>
 @apex/${apex}.sql;
 </#list>
+
+Insert Into SVED_DETAIL (SVED_SVE_EFIX_NUMBER, SVED_DESCRIPTION)
+Values (${patchnumber}, 'Apex ${pacthdescription}');
+Commit;
 ----------------------------------------------------------------------------------
 set termout on;
 Prompt
